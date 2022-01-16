@@ -28,7 +28,7 @@ def main():
     elif x_turn == False:
       o_num = input("O's turn, choose a number 1-9: ")
 
-      if o_num not in spaces:
+      if o_num not in spaces or o_num == "O" or o_num == "X":
         print("\nSorry, invalid move. Choose again.\n")
       elif o_num in spaces:
         spaces[spaces.index(o_num)] = "O"
